@@ -2,7 +2,7 @@
 
 Full-stack movie and TV show catalog app built with the MERN stack (MongoDB, Express.js, React, and Node.js). Provides users with an interactive platform to manage their movie and TV show collection.  
 
-## Features of the Movies Dashboard App
+## Features
 
 - ✨Fully **OFFLINE** or web application
 - Home page with upcoming movies and TV shows
