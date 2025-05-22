@@ -1,0 +1,131 @@
+.page {
+  padding: 0 0 1em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2.page-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(183, 64%, 60%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h3.category {
+  margin: 1em 0 0 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(185, 100%, 60%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.search-input {
+  max-width: min(600px, 50vw);
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(220, 25%, 12%);
+  color: white;
+  font-size: 1rem;
+}
+
+.sorts-container {
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+select {
+  border-radius: 5px;
+  background-color: hsl(220, 25%, 12%);
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 75%);
+  padding: 0.45em;
+  cursor: pointer;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #666;
+}
+
+.search-button {
+  padding: 0.75rem 1rem;
+  /* background-color: #e50914; */
+  background-color: hsl(4, 80%, 46%);
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #f40612;
+}
+
+
+@media (max-width: 639px) {
+  .page {
+    /* padding: 1rem 0; */
+    padding: 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+}
+
+.card-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center; /* Center the grid horizontally */
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.upcoming-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 2rem auto;
+  width: 50vw;
+}
+
+.upcoming-empty h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #e50914;
+}
+
+.upcoming-empty p {
+  color: #999;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

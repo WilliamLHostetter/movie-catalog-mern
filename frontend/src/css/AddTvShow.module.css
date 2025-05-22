@@ -1,0 +1,112 @@
+.page {
+  padding: 0 0 10em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+}
+
+.form-field {
+    margin-bottom: 2em;
+}
+
+.form-field-label-note {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+h2.page-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(183, 64%, 60%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button {
+  margin-top: 2em;
+  border-radius: 0.25rem; 
+  background-color: hsl(173, 80%, 40%); 
+  padding: 0.5rem 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+input {
+  border-width: 1px; 
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.file-input {
+  color: transparent;
+  border-width: 1px; 
+  padding: 0.25rem 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+input, textarea, select, .file-details {
+  display: block;
+}
+
+.title-input, .cast-input, .length-input {
+  width: min(50rem, 100%);
+  border-width: 1px;
+  padding: 0.25rem 0.5rem; 
+  font-size: 1.5rem;
+  background-color: hsl(220, 25%, 12%);
+}
+
+.description-input {
+  width: min(50rem, 100%);
+  height: 5rem;
+  font-size: 1rem;
+  background-color: hsl(220, 25%, 12%);
+}
+
+@media (max-width: 50em) {
+  .length-input {
+    width: 100%; 
+  }
+  .description-input {
+    width: 100%; 
+  }
+}
+
+select {
+  border-radius: 5px;
+  background-color: hsl(220, 25%, 12%);
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 75%);
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 0.25em 0.5em;
+  border-radius: 0.2em;
+  background-color: hsl(220, 25%, 12%);
+  cursor: pointer;
+}
+
+.status-msg-success {
+  font-size: 0.875rem; 
+  line-height: 1.25rem; 
+  color: rgb(22,163,74);
+}
+
+.status-msg-error {
+  font-size: 0.875rem; 
+  line-height: 1.25rem; 
+  color: rgb(220,38,38);
+}
